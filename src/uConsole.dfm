@@ -1,0 +1,42 @@
+object Console: TConsole
+  Left = 0
+  Top = 0
+  Caption = 'Console'
+  ClientHeight = 314
+  ClientWidth = 543
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DebugInfo: TRichEdit
+    Left = 0
+    Top = 0
+    Width = 543
+    Height = 314
+    Align = alClient
+    BorderStyle = bsNone
+    Color = 15920102
+    Ctl3D = True
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Lucida Console'
+    Font.Style = []
+    HideSelection = False
+    HideScrollBars = False
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+    Zoom = 100
+  end
+end

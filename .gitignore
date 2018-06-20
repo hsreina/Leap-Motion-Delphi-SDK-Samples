@@ -1,0 +1,9 @@
+*.exe
+*.rsm
+Debug
+__history
+*.stat
+*.res
+*.identcache
+*.local
+*.dll
