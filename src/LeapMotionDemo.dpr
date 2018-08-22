@@ -12,6 +12,15 @@ uses
 {$R *.res}
 
 begin
+
+{$IF defined(CPUX64)}
+  {*
+    For I don't know what reason, Delphi set the MXCSR flags to $1900
+    Usually, default value is $1f80
+  *}
+  // Enable IM and ZM masks
+  SetMXCSR(GetMXCSR() or (1 shl 7) or (1 shl 9));
+{$ENDIF}
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TForm1, Form1);
